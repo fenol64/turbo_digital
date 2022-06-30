@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -22,11 +23,11 @@ class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Rubik:wght@400;600&display=swap" rel="stylesheet" />
                     <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet" />
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+                    <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></Script>
                 </Head>
                 <body>
                     <Main />
                     <NextScript />
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
                 </body>
             </Html>
         )
